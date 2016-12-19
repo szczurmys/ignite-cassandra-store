@@ -43,6 +43,9 @@ import com.github.szczurmys.ignite.cache.store.cassandra.session.CassandraSessio
 import com.github.szczurmys.ignite.cache.store.cassandra.session.ExecutionAssistant;
 import com.github.szczurmys.ignite.cache.store.cassandra.session.GenericBatchExecutionAssistant;
 import com.github.szczurmys.ignite.cache.store.cassandra.session.LoadCacheCustomQueryWorker;
+import com.github.szczurmys.ignite.cache.store.cassandra.session.transaction.DeleteMutation;
+import com.github.szczurmys.ignite.cache.store.cassandra.session.transaction.Mutation;
+import com.github.szczurmys.ignite.cache.store.cassandra.session.transaction.WriteMutation;
 import org.apache.ignite.internal.util.typedef.internal.S;
 import org.apache.ignite.internal.util.typedef.internal.U;
 import org.apache.ignite.lang.IgniteBiInClosure;
