@@ -32,7 +32,6 @@ import org.apache.ignite.configuration.CacheConfiguration;
 import org.apache.ignite.internal.binary.BinaryMarshaller;
 import org.apache.ignite.internal.processors.cache.CacheEntryImpl;
 import org.apache.ignite.internal.util.typedef.internal.U;
-import com.github.szczurmys.ignite.tests.pojos.*;
 import com.github.szczurmys.ignite.tests.utils.CacheStoreHelper;
 import com.github.szczurmys.ignite.tests.utils.CassandraHelper;
 import com.github.szczurmys.ignite.tests.utils.TestsHelper;
@@ -45,6 +44,13 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
+
+import com.github.szczurmys.ignite.tests.pojos.Product;
+import com.github.szczurmys.ignite.tests.pojos.ProductOrder;
+import com.github.szczurmys.ignite.tests.pojos.Person;
+import com.github.szczurmys.ignite.tests.pojos.SimplePerson;
+import com.github.szczurmys.ignite.tests.pojos.PersonId;
+import com.github.szczurmys.ignite.tests.pojos.SimplePersonId;
 
 /**
  * Unit tests for Ignite caches which utilizing {@link com.github.szczurmys.ignite.cache.store.cassandra.CassandraCacheStore}

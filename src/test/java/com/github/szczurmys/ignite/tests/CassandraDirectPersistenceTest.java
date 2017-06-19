@@ -18,12 +18,11 @@
 package com.github.szczurmys.ignite.tests;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
+import java.util.List;
 import org.apache.ignite.cache.store.CacheStore;
 import org.apache.ignite.internal.processors.cache.CacheEntryImpl;
 import org.apache.ignite.internal.util.typedef.internal.U;
-import com.github.szczurmys.ignite.tests.pojos.*;
 import com.github.szczurmys.ignite.tests.utils.CacheStoreHelper;
 import com.github.szczurmys.ignite.tests.utils.CassandraHelper;
 import com.github.szczurmys.ignite.tests.utils.TestCacheSession;
@@ -35,6 +34,13 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.springframework.core.io.ClassPathResource;
+
+import com.github.szczurmys.ignite.tests.pojos.Product;
+import com.github.szczurmys.ignite.tests.pojos.ProductOrder;
+import com.github.szczurmys.ignite.tests.pojos.Person;
+import com.github.szczurmys.ignite.tests.pojos.SimplePerson;
+import com.github.szczurmys.ignite.tests.pojos.PersonId;
+import com.github.szczurmys.ignite.tests.pojos.SimplePersonId;
 
 /**
  * Unit tests for {@link com.github.szczurmys.ignite.cache.store.cassandra.CassandraCacheStore} implementation of

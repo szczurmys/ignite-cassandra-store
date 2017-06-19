@@ -21,7 +21,6 @@ package com.github.szczurmys.ignite.tests.utils;
 import com.github.szczurmys.ignite.cache.store.cassandra.common.SystemHelper;
 import org.apache.ignite.internal.processors.cache.CacheEntryImpl;
 import com.github.szczurmys.ignite.tests.load.Generator;
-import com.github.szczurmys.ignite.tests.pojos.*;
 import org.springframework.core.io.ClassPathResource;
 
 import java.util.Collection;
@@ -35,6 +34,13 @@ import java.util.Random;
 import java.util.ResourceBundle;
 import java.util.Calendar;
 import java.util.Date;
+
+import com.github.szczurmys.ignite.tests.pojos.Product;
+import com.github.szczurmys.ignite.tests.pojos.ProductOrder;
+import com.github.szczurmys.ignite.tests.pojos.Person;
+import com.github.szczurmys.ignite.tests.pojos.SimplePerson;
+import com.github.szczurmys.ignite.tests.pojos.PersonId;
+import com.github.szczurmys.ignite.tests.pojos.SimplePersonId;
 
 /**
  * Helper class for all tests
