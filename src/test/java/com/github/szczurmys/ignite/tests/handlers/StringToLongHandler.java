@@ -3,35 +3,33 @@ package com.github.szczurmys.ignite.tests.handlers;
 import com.datastax.driver.core.Row;
 import com.github.szczurmys.ignite.cache.store.cassandra.common.TypeHandler;
 
-import java.util.Date;
-
-public class LongToDateHandler implements TypeHandler<Long, Date> {
+public class StringToLongHandler implements TypeHandler<String, Long> {
     @Override
-    public Long toJavaType(Row row, int index) {
+    public String toJavaType(Row row, int index) {
         if (row.isNull(index)) {
             return null;
         }
-        return row.getTimestamp(index).getTime();
+        return String.valueOf(row.getLong(index));
     }
 
     @Override
-    public Long toJavaType(Row row, String col) {
+    public String toJavaType(Row row, String col) {
         if (row.isNull(col)) {
             return null;
         }
-        return row.getTimestamp(col).getTime();
+        return String.valueOf(row.getLong(col));
     }
 
     @Override
-    public Date toCassandraPrimitiveType(Long javaValue) {
+    public Long toCassandraPrimitiveType(String javaValue) {
         if (javaValue == null) {
             return null;
         }
-        return new Date(javaValue);
+        return Long.parseLong(javaValue);
     }
 
     @Override
-    public Class<Date> getClazz() {
-        return Date.class;
+    public Class<Long> getClazz() {
+        return Long.class;
     }
 }
