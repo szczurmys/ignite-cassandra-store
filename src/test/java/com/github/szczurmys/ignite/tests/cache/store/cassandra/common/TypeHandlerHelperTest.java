@@ -1,6 +1,8 @@
-package com.github.szczurmys.ignite.cache.store.cassandra.common;
+package com.github.szczurmys.ignite.tests.cache.store.cassandra.common;
 
 import com.datastax.driver.core.Row;
+import com.github.szczurmys.ignite.cache.store.cassandra.common.TypeHandler;
+import com.github.szczurmys.ignite.cache.store.cassandra.common.TypeHandlerHelper;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.*;
