@@ -1,9 +1,10 @@
 package com.github.szczurmys.ignite.tests.handlers;
 
+import com.datastax.driver.core.DataType;
 import com.datastax.driver.core.Row;
-import com.github.szczurmys.ignite.cache.store.cassandra.common.TypeHandler;
+import com.github.szczurmys.ignite.cache.store.cassandra.handler.TypeHandler;
 
-public class LongToStringHandler implements TypeHandler<Long, String> {
+public class LongToStringTestTypeHandler implements TypeHandler<Long, String> {
     @Override
     public Long toJavaType(Row row, int index) {
         if (row.isNull(index)) {
@@ -29,7 +30,8 @@ public class LongToStringHandler implements TypeHandler<Long, String> {
     }
 
     @Override
-    public Class<String> getClazz() {
-        return String.class;
+    public String getDDLType() {
+        return DataType.Name.TEXT.toString();
     }
+
 }
