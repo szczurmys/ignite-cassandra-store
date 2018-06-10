@@ -538,7 +538,7 @@ public class TestsHelper {
         for (int i = 0; i < phonesCnt; i++)
             phones.add(randomNumber(4));
 
-        return new SimplePerson(personNum, randomString(4), randomString(4), RANDOM.nextInt(100),
+        return new SimplePerson(personNum, randomString(4), randomString(4), (short)RANDOM.nextInt(100),
                 RANDOM.nextBoolean(), RANDOM.nextLong(), RANDOM.nextFloat(), new Date(), phones);
     }
 
@@ -556,7 +556,7 @@ public class TestsHelper {
         for (int i = 0; i < phonesCnt; i++)
             phones.add(randomNumber(4));
 
-        return new Person(personNum, randomString(4), randomString(4), RANDOM.nextInt(100),
+        return new Person(personNum, randomString(4), randomString(4), (short)RANDOM.nextInt(100),
             RANDOM.nextBoolean(), RANDOM.nextLong(), RANDOM.nextFloat(), new Date(), phones);
     }
     /** */
@@ -568,7 +568,7 @@ public class TestsHelper {
         for (int i = 0; i < phonesCnt; i++)
             phones.add(randomNumber(4));
 
-        return new Person(personNum, randomString(4), Long.toString(RANDOM.nextInt(100)), RANDOM.nextInt(100),
+        return new Person(personNum, randomString(4), Long.toString(RANDOM.nextInt(100)), (short)RANDOM.nextInt(100),
             RANDOM.nextBoolean(), RANDOM.nextLong(), RANDOM.nextFloat(), new Date(), phones);
     }
 
