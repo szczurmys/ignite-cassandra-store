@@ -13,7 +13,7 @@ public class TypeHandlerHelper {
     private static final Map<Class<?>, TypeHandler> cacheHandler = new ConcurrentHashMap<>();
 
     /**
-     * Get instance of type handler from class name. <br/>
+     * Get instance of type handler from class name. <br>
      * If object does not exist, it will be created and cached.
      *
      * @param handlerClazzName type handler class name
@@ -35,7 +35,7 @@ public class TypeHandlerHelper {
     }
 
     /**
-     * Get instance of type handler from class. <br/>
+     * Get instance of type handler from class. <br>
      * If object does not exist, it will be created and cached.
      *
      * @param handlerClass type handler class
