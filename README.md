@@ -36,6 +36,7 @@ If you are using Maven to manage dependencies of your project, you can add Cassa
 dependency like this (replace '${version}' with actual Cassandra Store version you are
 interested in):
 
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -52,7 +53,7 @@ interested in):
     </dependencies>
     ...
 </project>
-
+```
 
 Example of use for LocalDateTime:
 -------------------------------------
