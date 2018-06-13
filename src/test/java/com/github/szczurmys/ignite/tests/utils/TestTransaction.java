@@ -140,14 +140,4 @@ public class TestTransaction implements Transaction {
     @Override public IgniteFuture<Void> rollbackAsync() throws IgniteException {
         return null;
     }
-
-    /** {@inheritDoc} */
-    @Override public void suspend() throws IgniteException{
-        // No-op.
-    }
-
-    /** {@inheritDoc} */
-    @Override public void resume() throws IgniteException {
-        // No-op.
-    }
 }
