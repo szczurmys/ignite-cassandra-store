@@ -18,7 +18,6 @@
 package com.github.szczurmys.ignite.tests;
 
 import junit.framework.TestCase;
-import org.apache.ignite.cache.affinity.AffinityKeyMapped;
 import org.apache.ignite.cache.query.annotations.QuerySqlField;
 import com.github.szczurmys.ignite.cache.store.cassandra.persistence.KeyPersistenceSettings;
 import com.github.szczurmys.ignite.cache.store.cassandra.persistence.KeyValuePersistenceSettings;
