@@ -17,7 +17,6 @@
 
 package com.github.szczurmys.ignite.tests.utils;
 
-
 import com.github.szczurmys.ignite.cache.store.cassandra.common.SystemHelper;
 import org.apache.ignite.internal.processors.cache.CacheEntryImpl;
 import com.github.szczurmys.ignite.tests.load.Generator;
