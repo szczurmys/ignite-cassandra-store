@@ -291,7 +291,6 @@ public class PersistenceController {
         Collection<String> keyCols = settings.getTableColumns();
         StringBuilder hdrWithKeyFields = new StringBuilder();
 
-
         for (String column : keyCols) {
             // omit calculated fields in load statement
             if (pojoStrategy && settings.getFieldByColumn(column).calculatedField())
