@@ -18,4 +18,5 @@
 /**
  * Contains utility classes
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.utils;

@@ -18,4 +18,5 @@
 /**
  * Contains unit tests
  */
+
 package com.github.szczurmys.ignite.tests;

@@ -18,4 +18,5 @@
 /**
  * Contains commonly used helper classes
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.common;

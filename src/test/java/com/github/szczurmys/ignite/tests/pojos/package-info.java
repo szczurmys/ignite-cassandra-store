@@ -18,4 +18,5 @@
 /**
  * Contains sample POJO objects used in unit tests
  */
+
 package com.github.szczurmys.ignite.tests.pojos;

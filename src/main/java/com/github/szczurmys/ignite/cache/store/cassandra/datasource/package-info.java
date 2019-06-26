@@ -18,4 +18,5 @@
 /**
  * Contains data source implementation
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.datasource;
