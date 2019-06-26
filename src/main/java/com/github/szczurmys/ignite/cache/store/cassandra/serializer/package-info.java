@@ -18,4 +18,5 @@
 /**
  * Contains serializers implementation, to store BLOBs into Cassandra
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.serializer;

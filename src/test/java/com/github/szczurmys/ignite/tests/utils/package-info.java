@@ -18,4 +18,5 @@
 /**
  * Contains utility classes for unit tests
  */
+
 package com.github.szczurmys.ignite.tests.utils;

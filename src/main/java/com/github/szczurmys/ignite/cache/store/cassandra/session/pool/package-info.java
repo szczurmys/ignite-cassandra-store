@@ -18,4 +18,5 @@
 /**
  * Contains session pool implenetation for Cassandra sessions
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.session.pool;

@@ -18,4 +18,5 @@
 /**
  * Contains persistent settings configuration
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.persistence;

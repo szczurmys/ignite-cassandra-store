@@ -18,4 +18,5 @@
 /**
  * Contains load tests classes
  */
+
 package com.github.szczurmys.ignite.tests.load;

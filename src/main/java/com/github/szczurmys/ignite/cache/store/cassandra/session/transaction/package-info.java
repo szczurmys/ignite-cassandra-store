@@ -18,4 +18,5 @@
 /**
  * Contains mutations implementation, to store changes made inside Ignite transaction
  */
+
 package com.github.szczurmys.ignite.cache.store.cassandra.session.transaction;

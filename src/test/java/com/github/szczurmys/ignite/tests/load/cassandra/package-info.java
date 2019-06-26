@@ -18,4 +18,5 @@
 /**
  * Contains load tests workers implementation for Cassandra cluster
  */
+
 package com.github.szczurmys.ignite.tests.load.cassandra;
