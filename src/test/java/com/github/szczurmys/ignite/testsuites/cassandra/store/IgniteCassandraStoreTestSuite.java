@@ -22,6 +22,7 @@ import com.github.szczurmys.ignite.tests.CassandraDirectPersistenceTest;
 import com.github.szczurmys.ignite.tests.CassandraSessionImplTest;
 import com.github.szczurmys.ignite.tests.DDLGeneratorTest;
 import com.github.szczurmys.ignite.tests.IgnitePersistentStoreTest;
+import com.github.szczurmys.ignite.tests.cache.store.cassandra.handler.TypeHandlerHelperTest;
 import com.github.szczurmys.ignite.tests.utils.CassandraHelper;
 import org.apache.log4j.Logger;
 import org.junit.AfterClass;
@@ -41,7 +42,8 @@ import org.junit.runners.Suite.SuiteClasses;
     CassandraDirectPersistenceTest.class,
     CassandraSessionImplTest.class,
     DDLGeneratorTest.class,
-    IgnitePersistentStoreTest.class})
+    IgnitePersistentStoreTest.class,
+    TypeHandlerHelperTest.class})
 public class IgniteCassandraStoreTestSuite {
     /** */
     private static final Logger LOGGER = Logger.getLogger(IgniteCassandraStoreTestSuite.class.getName());
