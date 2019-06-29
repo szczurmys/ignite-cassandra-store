@@ -8,12 +8,15 @@ Forked repository with type-handler in cassandra-module: https://github.com/szcz
 
 This repository was created by `git filter-branch` forked repository https://github.com/szczurmys/ignite
 using commands: 
-* `git filter-branch --prune-empty --subdirectory-filter modules/cassandra/store -- --all`
-* `git filter-branch --tree-filter 'if [ -d src/main/java/org/apache/ignite/cache/store/cassandra ]; then mkdir -p src/main/java/com/github/szczurmys/ignite/cache/store/cassandra; mv src/main/java/org/apache/ignite/cache/store/cassandra/* src/main/java/com/github/szczurmys/ignite/cache/store/cassandra/; fi' -- --all`
-* `git filter-branch --tree-filter 'if [ -d src/test/java/org/apache/ignite/tests ]; then mkdir -p src/test/java/com/github/szczurmys/ignite/tests; mv src/test/java/org/apache/ignite/tests/* src/test/java/com/github/szczurmys/ignite/tests/; fi' -- --all`
-* `git filter-branch --tree-filter "find . -type f -exec sed -i -e 's/org\.apache\.ignite\.cache\.store\.cassandra/com.github.szczurmys.ignite.cache.store.cassandra/g' {} \;" -- --all`
-* `git filter-branch --tree-filter "find . -type f -exec sed -i -e 's/org\.apache\.ignite\.tests/com.github.szczurmys.ignite.tests/g' {} \;" -- --all`
+* `git filter-branch --prune-empty --subdirectory-filter modules/cassandra/store -- <BRANCHES>`
+* `git filter-branch --tree-filter 'if [ -d src/main/java/org/apache/ignite/cache/store/cassandra ]; then mkdir -p src/main/java/com/github/szczurmys/ignite/cache/store/cassandra; mv src/main/java/org/apache/ignite/cache/store/cassandra/* src/main/java/com/github/szczurmys/ignite/cache/store/cassandra/; fi' -- <BRANCHES>`
+* `git filter-branch --tree-filter 'if [ -d src/test/java/org/apache/ignite/tests ]; then mkdir -p src/test/java/com/github/szczurmys/ignite/tests; mv src/test/java/org/apache/ignite/tests/* src/test/java/com/github/szczurmys/ignite/tests/; fi' -- <BRANCHES>`
+* `git filter-branch --tree-filter 'if [ -d src/test/java/org/apache/ignite/testsuites ]; then mkdir -p src/test/java/com/github/szczurmys/ignite/testsuites; mv src/test/java/org/apache/ignite/testsuites/* src/test/java/com/github/szczurmys/ignite/testsuites/; fi' -- <BRANCHES>`
+* `git filter-branch --tree-filter "find . -type f -exec sed -i -e 's/org\.apache\.ignite\.cache\.store\.cassandra/com.github.szczurmys.ignite.cache.store.cassandra/g' {} \;" -- <BRANCHES>`
+* `git filter-branch --tree-filter "find . -type f -exec sed -i -e 's/org\.apache\.ignite\.tests/com.github.szczurmys.ignite.tests/g' {} \;" -- <BRANCHES>`
+* `git filter-branch --tree-filter "find . -type f -exec sed -i -e 's/org\.apache\.ignite\.testsuites/com.github.szczurmys.ignite.testsuites/g' {} \;" -- <BRANCHES>`
 
+<BRANCHES> - specified branches, you can also use --all, but i do not recommend that, because it really slows down the process
 
 Ignite Cassandra Store With Type Handler Module
 ------------------------
