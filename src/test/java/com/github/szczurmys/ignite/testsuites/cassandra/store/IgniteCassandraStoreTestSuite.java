@@ -21,7 +21,6 @@ import com.github.szczurmys.ignite.tests.CassandraConfigTest;
 import com.github.szczurmys.ignite.tests.CassandraDirectPersistenceTest;
 import com.github.szczurmys.ignite.tests.CassandraSessionImplTest;
 import com.github.szczurmys.ignite.tests.DDLGeneratorTest;
-import com.github.szczurmys.ignite.tests.DatasourceSerializationTest;
 import com.github.szczurmys.ignite.tests.IgnitePersistentStoreTest;
 import com.github.szczurmys.ignite.tests.utils.CassandraHelper;
 import org.apache.log4j.Logger;
@@ -41,7 +40,6 @@ import org.junit.runners.Suite.SuiteClasses;
     CassandraConfigTest.class,
     CassandraDirectPersistenceTest.class,
     CassandraSessionImplTest.class,
-    DatasourceSerializationTest.class,
     DDLGeneratorTest.class,
     IgnitePersistentStoreTest.class})
 public class IgniteCassandraStoreTestSuite {
